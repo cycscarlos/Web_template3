@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_pag1 {
+  width: 100%;
+  background: #fff;
+  margin: auto;
+}
+.cabecera {
+  height: 40px;
+  position: relative;
+  z-index: 3;
+}
+.logo {
+  color: #fff;
+  font-size: 1.5em;
+  font-family: "Lobster", cursive;
+  text-decoration: none;
+  display: block;
+  margin: 20px 40px;
+}
+
+.cabecera a:hover {
+  color: #4bcffa;
+}
+
+.menu-nav {
+  float: right;
+  margin-top: 0px;
+}
+.menu-nav li {
+  display: inline-block;
+}
+.menu-nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  font-size: 12px;
+}
+.menu-nav a:hover {
+  color: #b52025;
+}
+
+.iconos {
+  color: #fff;
+  float: left;
+  padding: 80px 40px;
+}
+.iconos a {
+  position: relative;
+  z-index: 4;
+}
+[class^="fab fa"] {
+  color: #fff;
+  padding: 15px;
+}
+[class^="fab fa"]:hover {
+  color: #b52025;
+  background: #000;
+}
+
+/* COMIENZA EL BACKGROUND VIDEO */
+
+.caja1-video {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.content-video {
+  max-width: 40rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.caja2-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.caja2-video video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.capa-transparente {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #303952;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.video-texto {
+  z-index: 2;
+}
+.video-texto p {
+  font-size: 1.5rem;
+  line-height: 40px;
+  /* Estas cuatro sentencias centran el texto */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translatex(-50%) translatey(-50%);
+}
+.video-texto p span {
+  color: #4bcffa;
+}
+
+/* Definición del responsive para dispositvos hasta 960px   */
+@media (max-width: 960px) {
+  .container {
+    padding: 0 3rem 0 3rem;
+  }
+}
+@media (max-width: 960px) {
+  .menu-nav li {
+    padding: 5px 3rem 0 3rem;
+  }
+}
